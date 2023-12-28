@@ -1,12 +1,50 @@
-## GitBook 是什么
+## SantyPilot 是什么
 
-GitBook 是使用 GitHub / Git 和 Markdown（或AsciiDoc）构建漂亮书籍的命令行工具（和Node.js库）。
+SantyPilot是一个开源飞控项目，前身是[LibrePilot](https://github.com/librepilot/)  
+SantyPilot聚焦于教学与科研领域，专注于固定翼与多旋翼性能调优与算法验证  
+通过轻量模块化的框架，和配套的开发规范，方便新手快速上手  
 
-GitBook 可以将您的内容作为网站（可定制和可扩展）或电子书（PDF，ePub或Mobi）输出。
+## SantyPilot官方文档
+[官方文档链接](https://santypilot.github.io/SantyPilot-doc/GLOSSARY.html)  
+本项目为SantyPilot官方文档代码仓，您可以自由更新其中内容  
+假定您已经搭建完成本地gitbook开发环境  
+您可以按照如下方法构建与更新SantyPilot文档  
+```bash
+git clone git@github.com:SantyPilot/SantyPilot-doc.git
+cd SantyPilot-doc
+# do some modification
+gitbook build # build .md files
+gitbook serve # preview on localhost:4000
 
-[GitBook.com](https://www.gitbook.com/ ) 是使用 GitBook 格式创建和托管图书的在线平台。它提供托管，协作功能和易于使用的编辑器。
+git add ./
+git commit -m "ADD NEW FEATURE"
+git push origin $YOUR_BRANCH # make a push
 
-![Image](https://camo.githubusercontent.com/c1b6c55fca8e171120ce1fd73afcee699cc2a98f/68747470733a2f2f7261772e6769746875622e636f6d2f476974626f6f6b494f2f676974626f6f6b2f6d61737465722f707265766965772e706e67)
+mkdir ../temp # make a temp dir
+cp -rf ./_book/* ../temp # cp page files into temp
+git checkout $YOUR_PAGE_BRANCH # check into temp dirs
+cp -rf ../temp/* .
 
-available in
-https://santypilot.github.io/SantyPilot-doc/GLOSSARY.html
+git add ./
+git commit -m "UPDATE PAGE FILES"
+git push origin $YOUR_PAGE_BRANCH # make another push
+
+# then make two PR: one $YOUR_BRANCH->dev
+# the other $YOUR_PAGE_BRANCH->gh-pages
+```
+
+## SantyPilot生态推广
+欢迎关注我们的公众号
+<table align="center">
+  <tr>
+    <td>
+      <img src="https://github.com/SantyPilot/SantyPilot-doc/blob/dev/SantyNotebook.jpg" width="250px">
+    </td>
+  </tr>
+</table>
+如果您有任何科研教学上的合作或需求，可以发邮件联系我（小新）   
+ 
+邮箱：Xiaosanti@gmail.com  963786615@qq.com   
+ 
+QQ:963786615   
+
