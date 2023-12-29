@@ -38,7 +38,7 @@ git push origin $YOUR_PAGE_BRANCH # make another push
 <table align="center">
   <tr>
     <td>
-      <img src="https://github.com/SantyPilot/SantyPilot-doc/blob/dev/SantyNotebook.jpg" width="250px">
+      <img src="https://github.com/SantyPilot/SantyPilot-doc/blob/master/SantyNotebook.jpg" width="250px">
     </td>
   </tr>
 </table>
