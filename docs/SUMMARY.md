@@ -1,26 +1,27 @@
 # SUMMARY
 
-## 前言
+## 项目
 
 * [简介](README.md)
+* [开发环境搭建](project/development.md)
 
-## 基础
+## 软件
 
-* [安装](basics/installation.md)
-* [命令](basics/commands.md)
-* [结构](basics/structure.md)
-* [配置](basics/settings.md)
-* [发布](basics/deploy.md)
-* [生成电子书](basics/generating-ebooks-and-pdfs.md)
-
-## 进阶
-
-* [插件](advanced/plugins.md)
-
-## 附录
-
-* [资源](appendix/resources.md)
+* [架构](software/arch.md)
+* [滤波](software/filter.md)
+* [控制](software/control.md)
+* [指令](software/command.md)
+* [交互](software/inter.md)
 
 ------
 
-* [术语](GLOSSARY.md)
+## 硬件
+
+* [云雾]()
+
+------
+
+## 地面站
+
+* [机制](gcs/arch_gcs.md)
+
