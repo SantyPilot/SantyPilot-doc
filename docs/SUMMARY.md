@@ -7,26 +7,21 @@
 
 ## 软件
 
-* [驱动](basics/installation.md)
-* [滤波](basics/commands.md)
-* [控制](basics/structure.md)
-* [指令](basics/settings.md)
-* [交互](basics/deploy.md)
+* [架构](software/arch.md)
+* [滤波](software/filter.md)
+* [控制](software/control.md)
+* [指令](software/command.md)
+* [交互](software/inter.md)
 
 ------
 
 ## 硬件
 
-* [云雾](advanced/plugins.md)
+* [云雾]()
 
 ------
 
 ## 地面站
 
-* [使用]
-* [机制](basics/generating-ebooks-and-pdfs.md)
+* [机制](gcs/arch_gcs.md)
 
-## 附录
-
-* [资源](appendix/resources.md)
-* [术语](GLOSSARY.md)
