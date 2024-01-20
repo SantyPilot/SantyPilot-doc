@@ -61,18 +61,31 @@ vim /usr/local/lib/node_modules/gitbook-cli/node_modules/npm/node_modules/gracef
 
 ## SantyPilot 生态推广
 欢迎关注我们的公众号，了解前沿咨询，构建无人机全栈开发能力
-<table align="center">
+<table class="santynotebook">
   <tr>
     <td>
-      <img src="./SantyNotebook.jpg" width="250px">
+      <img align="center" src="./SantyNotebook.jpg" width="250px">
     </td>
   </tr>
 </table>
+<style>
+.santynotebook {
+    text-align:center;
+}
+</style>
 如果您有任何科研教学上的合作或需求，可以发邮件联系我（小新）   
  
-邮箱：Xiaosanti@gmail.com   
- 
-963786615@qq.com   
- 
-QQ:963786615   
-
+<table>
+<tr>
+    <td>邮箱</td>
+    <td>xiaosanti213@gmail.com</td>
+</tr>
+<tr>
+    <td>邮箱</td>
+    <td>963786615@qq.com</td>
+</tr>
+<tr>
+    <td>QQ</td>
+    <td>963786615</td>
+</tr>
+</table>
