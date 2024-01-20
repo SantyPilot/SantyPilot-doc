@@ -1,13 +1,13 @@
 {
 	"gitbook": "3.2.2",
-	"title": "gitbook-templates",
-	"description": "记录 GitBook 的配置和一些插件的使用",
-	"author": "Zhang Peng",
+	"title": "santypilot",
+	"description": "SantyPilot官方文档",
+	"author": "zhangxin",
 	"language": "zh-hans",
 	"root": "./docs",
 	"links": {
 		"sidebar": {
-			"gitbook-templates": "https://github.com/dunwu/gitbook-templates"
+			"SantyPilot代码仓": "https://github.com/SantyPilot/SantyPilot"
 		}
 	},
 	"plugins": [
@@ -16,11 +16,10 @@
 		"-highlight",
 		"-livereload",
 		"search-plus@^0.0.11",
-		"simple-page-toc@^0.1.1",
+		"page-toc",
 		"github@^2.0.0",
 		"github-buttons@2.1.0",
 		"edit-link@^2.0.2",
-		"disqus@^0.1.0",
 		"prism@^2.1.0",
 		"prism-themes@^0.0.2",
 		"advanced-emoji@^0.2.1",
@@ -34,7 +33,6 @@
 		"tbfed-pagefooter@^0.0.1",
 		"expandable-chapters-small@^0.1.7",
 		"sectionx@^3.1.0",
-		"donate@^1.0.2",
 		"anchor-navigation-ex@1.0.10",
 		"favicon@^0.0.2",
 		"3-ba@^0.9.0"
@@ -47,10 +45,10 @@
 			"css": ["prism-themes/themes/prism-base16-ateliersulphurpool.light.css"]
 		},
 		"github": {
-			"url": "https://github.com/dunwu/gitbook-templates"
+			"url": "https://github.com/SantyPilot/SantyPilot"
 		},
 		"github-buttons": {
-			"repo": "dunwu/gitbook-templates",
+			"repo": "SantyPilot/SantyPilot",
 			"types": ["star"],
 			"size": "small"
 		},
@@ -68,34 +66,23 @@
 			"vk": false
 		},
 		"tbfed-pagefooter": {
-			"copyright": "Copyright © Zhang Peng 2017",
+			"copyright": "Copyright SantyPilot Team 2024",
 			"modify_label": "文件最近一次修订时间：",
 			"modify_format": "YYYY-MM-DD HH:mm:ss"
 		},
 		"3-ba": {
 			"token": "98c1048ef34431fef7bec1693e4a15cf"
 		},
-		"donate": {
-			"wechat": "https://raw.githubusercontent.com/dunwu/gitbook-templates/master/assets/images/weixin.png",
-			"alipay": "https://raw.githubusercontent.com/dunwu/gitbook-templates/master/assets/images/zhifubao.png",
-			"title": "",
-			"button": "打赏",
-			"alipayText": "支付宝打赏",
-			"wechatText": "微信打赏"
-		},
-		"disqus": {
-			"shortName": "gitbook-templates"
-		},
 		"simple-page-toc": {
 			"maxDepth": 4,
 			"skipFirstH1": true
 		},
 		"edit-link": {
-			"base": "https://github.com/dunwu/gitbook-templates/blob/master/templates/doc-template/docs",
+			"base": "https://github.com/SantyPilot/SantyPilot-doc/blob/dev/docs/",
 			"label": "编辑此页面"
 		},
 		"sitemap-general": {
-			"prefix": "https://github.com/dunwu"
+			"prefix": "https://github.com/SantyPilot"
 		},
 		"anchor-navigation-ex": {
 			"showLevel": false,
