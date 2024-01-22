@@ -55,15 +55,14 @@ make -j8 uavobjects
 ```
 构建整个固件entire flash(ef = bl + fw)
 ```bash
-make -j8 ef_revolution
+make -j8 mist 
 ```
 出现构建报错，您可以在构建命令里添加V=1选项，打印报错命令，贴给我们
 ```
-make -j8 V=1 ef_revolution
+make -j8 V=1 mist
 ```
 
-需要说明的是，revolution为Librepilot已有固件，现在在网上找不到这款飞控了   
-我们的云雾mist系列飞控套件正在抓紧测评中，发布届时更新文档和构建命令，此处仅示意说明   
+需要指出的是，云雾mist系列飞控套件正在测评中
 
 生成的地面站，飞控软件可以在build目录下找到
 
@@ -171,13 +170,16 @@ make -j8 simposix
 
 ## Windows
 
+Windows下gcs的debug版本会出现闪退的情况，初步排查和win10显卡驱动有关
+不推荐Windows系统开发
+
 ### 环境要求
 
 Win7,Win8,Win10
 
 ### 下载三方库与构建工具链
 
-您可以在[链接](https://msys2.github.io)下载i686（32bit）或x86_64（64bit）MSYS2，并安装   
+您可以在[链接](https://msys2.github.io)下载i686（32bit）SYS2，并安装   
 其中包含了GNU构建工具链，必要的命令行工具，以及pacman包管理系统   
 
 打开MSYS2终端工具，添加pacman三方库地址，这里使用librepilot提供的pacman地址
@@ -209,27 +211,6 @@ pacman -S --needed mingw-w64-i686-gst-plugins-good
 pacman -S --needed mingw-w64-i686-gst-plugins-bad
 pacman -S --needed mingw-w64-i686-gst-plugins-ugly
 pacman -S --needed mingw-w64-i686-gst-libav
-```
-
-或是MINGW64终端
-```bash
-pacman -Sy
-pacman -S --needed git unzip tar
-pacman -S --needed mingw-w64-x86_64-toolchain
-pacman -S --needed mingw-w64-x86_64-ccache
-pacman -S --needed mingw-w64-x86_64-ntldd
-pacman -S --needed mingw-w64-x86_64-qt5
-pacman -S --needed mingw-w64-x86_64-SDL
-pacman -S --needed mingw-w64-x86_64-mesa
-pacman -S --needed mingw-w64-x86_64-openssl
-pacman -S --needed mingw-w64-x86_64-gdal-minimal
-pacman -S --needed mingw-w64-x86_64-OpenSceneGraph
-pacman -S --needed mingw-w64-x86_64-osgearth
-pacman -S --needed mingw-w64-x86_64-gst-plugins-base
-pacman -S --needed mingw-w64-x86_64-gst-plugins-good
-pacman -S --needed mingw-w64-x86_64-gst-plugins-bad
-pacman -S --needed mingw-w64-x86_64-gst-plugins-ugly
-pacman -S --needed mingw-w64-x86_64-gst-libav
 ```
 
 下载代码并下载工具链
@@ -283,7 +264,7 @@ mingw32-make ccache_install # speed up compile
 
 ### 仿真
 
-目前还不支持Windows上的仿真程序，正在支持开发中
+构建命令和Linux相同
 
 ## 开发规范
 希望您遵守如下开发规范
